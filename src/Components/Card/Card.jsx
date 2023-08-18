@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import star from "../../assets/Star 1.png";
 
 function Card({ data }) {
-  const { title, coverImg, location, rating, reviewCount, price, openSpots } =
+  const { title, coverImg, location, stats, reviewCount, price, openSpots } =
     data;
   const display =
     openSpots === 0 ? "SOLD OUT" : location === "Online" ? "ONLINE" : false;
@@ -19,8 +19,8 @@ function Card({ data }) {
       <div className="card-content">
         <div className="stats">
           <img src={star} alt="" />
-          <span className="black"> {rating} </span>
-          <span>({reviewCount})</span>
+          <span className="black"> {stats.rating} </span>
+          <span>({stats.reviewCount})</span>
           <span>•</span>
           <span>{location}</span>
         </div>
