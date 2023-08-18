@@ -15,3 +15,10 @@
     0px 2.9825618267059326px 7.456404209136963px rgba(0, 0, 0, 0.1)
   );
 }
+
+
+.card-section {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+}
