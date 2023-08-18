@@ -12,7 +12,7 @@ function Card({ data }) {
     <div className="card-container">
       <div
         className="pic"
-        style={{ backgroundImage: `url("../../assets/${coverImg}")` }}
+        style={{ backgroundImage: `url("/public/images/${coverImg}")` }}
       >
         {display && <button>{display}</button>}
       </div>
